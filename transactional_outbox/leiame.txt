@@ -1,0 +1,19 @@
+O problema que o Transactional Outbox resolve
+
+Em arquiteturas orientadas a eventos, este fluxo é perigoso:
+
+1. Salva dados no banco
+2. Publica evento no Kafka
+
+
+Se o passo 1 der certo e o 2 falhar → inconsistência
+Se publicar antes de persistir → evento fantasma
+
+❌ Não existe transação distribuída confiável entre DB + broker.
+
+2️⃣ Solução: Transactional Outbox
+
+Ideia central:
+
+Persistir o evento na mesma transação do dado de negócio
+Publicar o evento de forma assíncrona depois

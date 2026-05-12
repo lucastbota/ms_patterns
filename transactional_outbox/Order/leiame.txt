@@ -1,0 +1,4 @@
+
+URL's úteis:
+http://localhost:8083/connectors/outbox-connector
+http://localhost:8083/connectors/outbox-connector/status

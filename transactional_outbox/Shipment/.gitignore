@@ -1,0 +1,49 @@
+# Maven Build Artifacts
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Maven Wrapper (Ignore the JAR, but KEEP the shell scripts/properties)
+!.mvn/wrapper/maven-wrapper.jar
+
+# Compiled Java Classes
+*.class
+
+# Package Files (Optional: common if they aren't in target/)
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata
+bin/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# VS Code
+.vscode/
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db

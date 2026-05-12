@@ -1,0 +1,3 @@
+curl -X POST http://localhost:8087/orders \
+  -H "Content-Type: application/json" \
+  -d '{"amount":150.50}'
